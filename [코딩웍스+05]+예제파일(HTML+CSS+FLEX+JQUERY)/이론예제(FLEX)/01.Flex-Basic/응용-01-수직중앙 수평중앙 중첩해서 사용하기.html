@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Flexbox - Center Content</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #ffff00;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background-color: #eee;
+      width: 1000px;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section {
+      background-color: #ddd;
+      width: 600px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section h1 {
+      font-size: 2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <section>
+      <h1>수직중앙 수평중앙 중첩하기</h1>
+    </section>
+  </div>
+
+</body>
+
+</html>

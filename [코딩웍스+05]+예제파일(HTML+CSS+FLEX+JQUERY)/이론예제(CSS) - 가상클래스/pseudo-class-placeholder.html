@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : placeholder</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid orange;
+        }
+        input[type="text"]::placeholder {
+            color: red;
+            font-size: 15px;
+        }
+        input[type="text"]:placeholder-shown {
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+   
+   <h1 class="headline">::placeholder</h1>
+   
+   <div>
+       <input type="text" placeholder="Type something here!">
+   </div>
+   <div>
+       <input type="text" placeholder="Enter something into this field, if you please!">
+   </div>
+   
+<!--
+   <h3>클릭했을 경우 placeholder 감추기</h3>
+    
+   <input type="text" placeholder="enter your text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your text'">
+-->
+    
+    
+</body>
+</html>

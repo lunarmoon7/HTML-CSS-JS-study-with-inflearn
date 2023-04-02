@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>before-after-button</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        a {
+            text-decoration: none;
+            background-color: #0076fe;
+            color: white;
+            display: block;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 2px;
+            font-size: 13px;
+            position: relative;
+        }
+        a:before {
+            content: url(images/icon-facebook.png);
+            position: absolute;
+            left: 10px;
+            top: 12px;
+			transform: scale(0.8);
+        }
+        a:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <a href="">페이스북으로 로그인</a>
+          
+</body>
+</html>
+

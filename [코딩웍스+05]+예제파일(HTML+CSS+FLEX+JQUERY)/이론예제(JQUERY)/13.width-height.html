@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 hide show</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 50px; height: 100px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: uppercase; color: white;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('div').click(function(){
+			var wid = $(this).height();
+			$(this).width(wid);
+		});
+    </pre>
+    </fieldset>   	
+    
+    <pre>
+		$('div').click(function(){
+			var wid = $(this).height();
+			$(this).width(wid);
+		});
+    </pre>
+    
+    <div></div>
+    
+    <script>
+		$('div').click(function(){
+			var wid = $(this).height();
+			$(this).width(wid);
+		});
+	</script>
+
+    
+</body>
+</html>

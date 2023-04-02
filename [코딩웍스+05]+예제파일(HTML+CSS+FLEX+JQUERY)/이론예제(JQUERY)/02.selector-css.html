@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 선택자</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <style>
+		div {float: left; margin: 10px;}
+		.box1 {width: 100px; height: 100px; background-color: blue;}
+		.box2 {width: 100px; height: 100px; background-color: tomato;}
+	</style>
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('.box2').css({'background-color':'tomato','width':'200px','border-radius':'10px'});
+	</pre>
+    </fieldset>
+    
+	
+   
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+    <script>
+        $('.box2').css({'background-color':'tomato','width':'200px','border-radius':'10px'});
+	</script>
+    
+</body>
+</html>

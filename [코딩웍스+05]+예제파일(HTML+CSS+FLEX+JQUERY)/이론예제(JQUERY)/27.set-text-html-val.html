@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 Get - text() html() val()</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		button {
+			background-color: dodgerblue;
+			color: white;
+			padding: 10px;
+			border: none;
+			margin: 20px 0;
+			cursor: pointer;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>  
+	$('.text-btn').click(function(){
+		$('.txt1').text('자바스크립트 라이브러리');
+	});
+	$('.html-btn').click(function(){
+		$('.txt2').html('<b>자바스크립트 라이브러리</b>');
+	});
+	$('.val-btn').click(function(){
+		$('.txt3').val('자바스크립트 라이브러리');
+	});        
+    	</pre>
+    </fieldset>   	
+    
+    <p>JQuery란 엘리먼트를 선택하는 <b>자바스크립트 라이브러리</b></p>
+    
+    <button class="text-btn">set text</button>
+    <button class="html-btn">set html</button>
+    <button class="val-btn">set val</button>
+    <p class="txt1">문단영역1</p>
+    <p class="txt2">문단영역2</p>
+    <input class="txt3" type="text">
+    
+    <script>
+		$('.text-btn').click(function(){
+			$('.txt1').text('자바스크립트 라이브러리');
+		});
+		$('.html-btn').click(function(){
+			$('.txt2').html('<b>자바스크립트 라이브러리</b>');
+		});
+		$('.val-btn').click(function(){
+			$('.txt3').val('자바스크립트 라이브러리');
+		});
+	</script>
+
+    
+</body>
+</html>

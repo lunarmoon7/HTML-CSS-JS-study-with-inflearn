@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 setInterval()</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: none; color: white;}
+		button {cursor: pointer; width: 100px; margin-bottom: 10px}
+		p {font-weight: bold; font-size: 50px;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+	//기본형
+		var 변수명 = setInterval(function(){
+			실행할 구문
+		},반복 시간 지정)
+   ======================================================
+	$(function(){
+		var abc = setInterval(function(){
+
+			var now = new Date(); //전체 날짜 시간 정보를 변수 now에 저장
+			var hr = now.getHours(); //시간 정보를 변수 hr에 저장
+			var min = now.getMinutes(); //분 정보를 변수 min에 저장
+			var sec = now.getSeconds(); //초 정보를 변수 sec에 저장
+
+			$('p span').eq(0).text(hr); //변수 hr을 가져와 p span에 출력
+			$('p span').eq(1).text(min); //변수 min을 가져와 p span에 출력
+			$('p span').eq(2).text(sec); //변수 sec을 가져와 p span에 출력
+
+		},1000)
+	});       
+    </pre>
+    </fieldset>   	
+    
+    
+    <p>
+    	<span>00</span>:<span>00</span>:<span>00</span>
+    </p>
+    
+    <script>
+		var abc = setInterval(function(){
+
+			var now = new Date(); //전체 날짜 시간 정보를 변수 now에 저장
+			var hr = now.getHours(); //시간 정보를 변수 hr에 저장
+			var min = now.getMinutes(); //분 정보를 변수 min에 저장
+			var sec = now.getSeconds(); //초 정보를 변수 sec에 저장
+
+			$('p span').eq(0).text(hr); //변수 hr을 가져와 p span에 출력
+			$('p span').eq(1).text(min); //변수 min을 가져와 p span에 출력
+			$('p span').eq(2).text(sec); //변수 sec을 가져와 p span에 출력
+
+		},1000)
+	</script>
+    
+</body>
+</html>

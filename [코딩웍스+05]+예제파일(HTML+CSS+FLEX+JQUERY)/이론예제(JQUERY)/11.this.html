@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 this</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 800px;height: 50px;background-color: dodgerblue;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('ul li').click(function(){
+			$(this).css({'color':'red','font-weight':'bold'});
+		});
+    </pre>
+    </fieldset>   	
+    
+    <pre>
+		$('ul li').click(function(){
+			$(this).css({'color':'red','font-weight':'bold'});
+		});
+    </pre>
+    
+    <ul>
+		<li>리스트</li>
+		<li>리스트</li>
+		<li>리스트</li>
+		<li>리스트</li>
+		<li>리스트</li>
+    </ul>
+    
+    <script>
+		$('ul li').click(function(){
+			$(this).css({'color':'red','font-weight':'bold'});
+		});
+	</script>
+
+    
+</body>
+</html>

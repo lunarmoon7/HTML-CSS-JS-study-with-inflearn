@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : first-child & last-child</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        ol > li:first-child {
+            background-color: red;
+        }
+        ol > li:last-child {
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1 class="headline">:first-child, :last-child</h1>
+    
+    <h3>읽어야 할 책 목록</h3>
+    <ol>
+        <li>샤를 드 푸코, 사하라의 불꽃</li>
+        <li>장영희, 생일</li>
+        <li>서정주, 밤이 깊으면</li>
+    </ol>
+
+</body>
+</html>

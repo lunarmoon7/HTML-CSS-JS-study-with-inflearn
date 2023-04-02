@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>What is FlexBox?</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    section {
+      padding: 10px 30px;
+    }
+    section:nth-child(even) {
+      background-color: #eee;
+    }
+    ul {
+      padding-left: 18px;
+      line-height: 2em;
+          justify-content: ;
+          align-items: ;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    <h1>플레스(Flex)를 왜 사용하나요?</h1>
+    <ul>
+      <li>float 속성을 사용하지 않고 가로배치한다.</li>
+      <li>반응형 레이아웃을 만들기 쉽다.</li>
+      <li>자식요소의 위치 잡기(Positioning)를 훨씬 쉽게 한다.</li>
+      <li>브라우저에 보여지는 HTML 요소의 순서를 HTML 코드를 수정하지 않고 가능하다.</li>
+    </ul>
+  </section>
+  <section>
+    <h1>Flex 속성</h1>
+    <ul>
+      <li><b>display</b>: flex | inline-flex</li>
+      <li><b>flex-direction</b>: row | column</li>
+      <li><b>flex-wrap</b>: wrap | nowrap | wrap-reverse</li>
+      <li><b>flex-basis</b>: 길이</li>
+      <li><b>justify-content</b>: flex-start | flex-end | center | space-between | space-around</li>
+      <li><b>align-self</b>: auto | flex-start | flex-end | center | baseline | stretch</li>
+      <li><b>align-items</b>: flex-start | flex-end | center | baseline | stretch</li>
+      <li><b>align-content</b>: flex-start | flex-end | center | space-between | space-around | stretch</li>
+      <li><b>flex-grow</b>: 숫자(정수)</li>
+      <li><b>flex-shrink</b>: 숫자(정수)</li>
+      <li><b>flex</b>: 숫자(정수)</li>
+      <li><b>order</b>: 숫자(정수)</li>
+    </ul>
+  </section>
+  <section>
+    <h1 style="color: crimson;">부모 요소와 자식 요소에 정의하는 Flex 속성 구분</h1>
+    <ul>
+      <li>부모요소에 쓰는 속성: display:flex, flex-direction, flex-wrap, justify-content, align-items, align-content</li>
+      <li>자식요소에 쓰는 속성: flex, flex-grow, flex-shrink, flex-basis, order, align-self</li>
+    </ul>
+  </section>
+  
+</body>
+</html>

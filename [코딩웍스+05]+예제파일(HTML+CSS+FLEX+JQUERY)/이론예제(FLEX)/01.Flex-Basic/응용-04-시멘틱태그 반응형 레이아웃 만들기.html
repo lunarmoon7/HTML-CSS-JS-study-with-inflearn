@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Flexbox Semantic Layout</title>
+    <style>
+        /* Google Web Fonts */
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        header {
+            background-color: tomato;
+            flex: 1;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+        }
+
+        section article {
+            padding: 15em 1em;
+        }
+
+        article.main {
+            background-color: gray;
+            flex: 4;
+            order: 2;
+        }
+
+        article.left {
+            background-color: yellow;
+            flex: 1;
+            order: 1;
+        }
+
+        article.right {
+            background-color: green;
+            flex: 1;
+            order: 3;
+        }
+
+        footer {
+            background-color: aqua;
+            flex: 1;
+            padding: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            section {
+                flex-direction: column;
+            }
+            section article {
+                padding: 1em;
+            }
+            article.main {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <section>
+            <article class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </article>
+            <article class="left">Aside 1</article>
+            <article class="right">Aside 2</article>
+        </section>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+
+</html>

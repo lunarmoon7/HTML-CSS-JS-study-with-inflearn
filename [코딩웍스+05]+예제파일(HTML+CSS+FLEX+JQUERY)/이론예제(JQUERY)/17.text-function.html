@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 text</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: uppercase; color: white;}
+		button {padding: 5px 8px; margin: 20px 0; cursor: pointer;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+	//기본형
+		$('선택자').text(); //문자 가져오기
+		$('선택자').text('변경할 문자열'); //문자 변경하기
+    ===================================================   
+		$('button').click(function(){
+			var txt = $(this).text(); //클릭한 버튼의 컬러명을 변수 txt에 넣기
+			$('div').text(txt); //변수 txt에 저장된 컬러명을 div에 출력
+			$('div').css({'background':txt}); //변수 txt에 저장된 컬러명으로 CSS 배경색을 변경
+		});
+    </pre>
+    </fieldset>   	
+
+    
+    <button>pink</button>
+    <button>green</button>
+    <button>tomato</button>
+    <button>crimson</button>
+    <div>text box</div>
+    
+    <script>
+		$('button').click(function(){
+			var txt = $(this).text(); //클릭한 버튼의 컬러명을 변수 txt에 넣기
+			$('div').text(txt); //변수 txt에 저장된 컬러명을 div에 출력
+			$('div').css({'background':txt}); //변수 txt에 저장된 컬러명으로 CSS 배경색을 변경
+		});
+	</script>
+
+    
+</body>
+</html>

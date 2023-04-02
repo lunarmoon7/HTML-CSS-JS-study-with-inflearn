@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion 속성 - 배치 방법 지정하기</title>
+    <style type="text/css">
+        body { margin: 0; }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background-color: #59b1f6;
+            color: white;
+            text-align: center;
+            position: relative; /* position: relative를 선언하고 자식객체 absolute 좌표 기준 설정 */
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: #ffb5b4;
+            text-align: center;
+            position: absolute; /* position: absolute를 선언하고 부유 객체로 만들기 */
+            left: 50px; /* 부모객체를 기준으로 */
+            bottom: -50px; /* 부모객체를 기준으로 */
+        }
+    </style>
+</head>
+
+<body>
+   
+   <div class="box1">
+       box1
+       <div class="box2">box2</div>
+   </div>
+   <div></div>
+
+   <!--실습1) 부모객체 좌표 변경해서 따라 다니는 absolute 자식객체 좌표 확인하기-->
+   <!--실습2) div 만들어서 absolute 좌표 코너별로 이동 시키기-->
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.dropdown {
+  border: 1px solid;
+  display: inline-block;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 15px;
+  font-size: 18px;
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dropdown:hover .dropdown-btn {
+  background-color:green;
+  animation: ani 1s 0s linear infinite;
+}
+.dropdown-submenu {
+  display: none;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  padding: 3px;
+}
+.dropdown-submenu a {
+  display: block;
+  width: inherit;
+}
+.dropdown-submenu a:hover {
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-submenu {
+  display: block;
+}
+
+@keyframes ani {
+  0% { color : crimson; }
+  25% { color : dodgerblue; }
+  50% { color : darkgreen; }
+  75% { color : purple; }
+  100% { color : pink; }
+}

@@ -1,0 +1,57 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gnb a {
+    border: 3px solid black;
+    width: 300px;
+    display: block;
+    height: 40px;
+    position: relative;
+    /* 부모 요소에 overflow: hidden 준다 */
+    overflow: hidden; 
+}
+.gnb a:before{
+    background-color: crimson;
+    left: 0;
+}
+.gnb a:after{
+    background-color: dodgerblue;
+    left: 100%;
+}
+.gnb a:before,
+.gnb a:after {
+    content:attr(data-text);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.gnb a:hover:before {
+    left: -100%;
+}
+.gnb a:hover:after {
+    left: 0;
+}
+
+
+
+
+
+
+

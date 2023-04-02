@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>before-after-headline</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        h1:before {
+            content: url(images/icon-question.png);
+            float: left;
+            margin-top: -20px;
+            margin-right: 5px;
+            transform: scale(0.85);
+        }
+        h1:after {
+            content: "인텔® 제품에 대해 자주 묻는 질문과 그에 대한 답변을 제공합니다.";
+            display: block;
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <h1>자주 묻는 질문들(FAQ)</h1>
+
+          
+</body>
+</html>

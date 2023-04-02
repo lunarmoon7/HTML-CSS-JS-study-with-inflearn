@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.loading span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    animation: loading 1.5s infinite;
+}
+.loading span:nth-child(1){}
+.loading span:nth-child(2){
+    animation-delay: 0.8s;
+}
+@keyframes loading{
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 10px); 
+        background-color: dodgerblue;
+        /* 0%에서 left를 사용했으므로 right를 사용하면 안된다 */
+    }
+    50% {
+        top: calc(100% - 10px);
+        left: calc(100% - 10px); 
+        background-color: orange;
+    }
+    75% {
+        top: calc(100% - 10px);
+        left: 0;
+        background-color: yellowgreen;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}

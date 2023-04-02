@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background gradient</title>
+	<style>
+		div {
+			display: inline-block;
+			margin: 20px;
+			width: 600px;
+			height: 300px;
+		}
+		/* repeating gradient */
+		.gradient1 {
+			background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+		}
+		.gradient2 {
+			background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="gradient1"></div>
+	<div class="gradient2"></div>
+	
+</body>
+</html>

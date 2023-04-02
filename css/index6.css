@@ -1,0 +1,81 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .card {
+    position: relative;
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.container .card .content {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    padding-top: 130px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container .card:nth-child(1) .content {
+    background: linear-gradient(to top, crimson, transparent);
+}
+
+.container .card:nth-child(2) .content {
+    background: linear-gradient(to top, dodgerblue, transparent);
+}
+
+.container .card:nth-child(3) .content {
+    background: linear-gradient(to top, yellowgreen, transparent);
+}
+
+.container .card .content h2 {
+    font-size: 30px;
+}
+
+.container .card .content h2 span {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    color: gold;
+}
+
+.container .card .content .sns a {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+
+.container .card:hover .content {
+    top: 0;
+}
+.container .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}

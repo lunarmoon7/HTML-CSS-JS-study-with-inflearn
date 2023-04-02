@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>flex - align-self</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .info {
+      padding: 30px;
+    }
+    .parent {
+      border: 5px solid green;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .parent div {
+      width: 100px;
+      height: 50px;
+      margin: 5px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="info">
+    <h2>부모요소 속성 중 방향과 줄 바뀜 축약형 속성 flex-flow</h2>
+    <ul>
+      <li>flex-direction 속성과 flex-wrap 속성을 flex-flow라는 축약 속성으로 합칠 수 있습니다. flex-flow: flex-direction flex-wrap;</li>
+    </ul>
+  </div>
+  
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+  </div>
+  
+</body>
+</html>

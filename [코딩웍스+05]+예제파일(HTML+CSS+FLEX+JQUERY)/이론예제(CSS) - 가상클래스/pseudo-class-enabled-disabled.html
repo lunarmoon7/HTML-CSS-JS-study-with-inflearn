@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : enabled-disabled</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        input[type="text"]::placeholder {
+            color: red;
+        }
+        input[type="text"]:enabled {
+            color: blue;
+        }
+        input[type="text"]:disabled {
+          color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+   <h1 class="headline">:enabled, :disabled</h1>
+    <div>
+       <label for="SecondField">아이디 :</label>
+          <input type="text" id="SecondField" value="userid" disabled="disabled">
+          
+          <label for="FirstField">이름 :</label>
+          <input type="text" id="FirstField" placeholder="실명을 입력하세요.">
+    </div>  
+    
+</body>
+</html>

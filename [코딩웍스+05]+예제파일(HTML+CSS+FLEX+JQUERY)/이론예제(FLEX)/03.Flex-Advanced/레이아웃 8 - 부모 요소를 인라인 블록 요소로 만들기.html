@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>레이아웃 8 - 부모 요소를 인라인 블록 요소로 만들기</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      height: 100vh;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+    }
+    /*header h2 {
+      display: inline-block;
+      vertical-align: sub;
+    }*/
+    .badge {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 12px;
+      padding: 3px;
+      margin: 2px;
+    }
+    .badge.new {
+      background-color: dodgerblue;
+    }
+    .badge.hot {
+      background-color: crimson;
+    }
+    .badge.like {
+      background-color: blue;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h2>부모 요소를 인라인 블록 요소로 만들기</h2>
+    <span class="badge new">new</span>
+    <span class="badge hot">hot</span>
+    <span class="badge like">like</span>
+  </header>
+  
+</body>
+</html>

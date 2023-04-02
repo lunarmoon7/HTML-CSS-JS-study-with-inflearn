@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Flexbox - Multi Lines</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #eee;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    
+    section {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    section div {
+      background-color: crimson;
+      border: 5px solid black;;
+      color: #fff;
+      font-size: 50px;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+    }
+    .content1 {
+      background-color: yellow;
+    }
+    .content2 {
+      background-color: pink;
+    }
+    .content3 {
+      background-color: plum;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </section>
+    
+</body>
+</html>

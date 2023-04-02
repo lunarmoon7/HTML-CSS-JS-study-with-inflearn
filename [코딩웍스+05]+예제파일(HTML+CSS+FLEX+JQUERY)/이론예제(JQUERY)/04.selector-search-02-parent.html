@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 선택자</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+/*		img {width: 50%;}*/
+		button {cursor: pointer}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('b').parent().css({'text-decoration':'underline'})
+		$('b').parent('.active').css({'color':'red'});
+	</pre>
+    </fieldset>
+    
+	
+   
+    <ul>
+		<li><b>리스트1</b></li>
+		<li>리스트2</li>
+		<li>리스트3</li>
+		<li class="active"><b>리스트4</b></li>
+    </ul>
+    
+    <script>
+        $('b').parent().css({ 
+            'text-decoration':'underline'
+        }); 
+        $('b').parent('.active').css({
+            'color':'red'
+        });
+	</script>
+   
+   <!-- parents : 상위의 모든 부모요소 -->
+   <!-- parentsUntil('yourclass') : 상위의 모든 부모요소 중 yourclass 전까지 -->
+    
+</body>
+</html>

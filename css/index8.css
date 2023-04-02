@@ -1,0 +1,105 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #222;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.login {
+    border: 1px solid #eee;
+    width: 800px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.233);
+}
+
+.login span {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.login input[type=email],
+.login input[type=password] {
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px;
+    box-sizing: border-box; /* padding 으로 width 가 늘어나므로*/
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login p {
+    overflow: hidden;
+}
+
+.login p label {
+    float: left;
+    cursor: pointer;
+}
+
+.login p a {
+    float: right;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+.login button {
+    background-color: #2991b1;
+    color: #fff;
+    border: none;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background-color: #22738b;
+}
+
+.login input[type=email]:hover,
+.login input[type=password]:hover {
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+.login input[type=email]::placeholder,
+.login input[type=password]::placeholder {
+    
+    transition: 0.3s;
+}
+
+.login input[type=email]:focus::placeholder,
+.login input[type=password]:focus::placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.login input[type=email] {
+    background: #fff url(images/icon-email.png) no-repeat center left 10px;
+}
+
+.login input[type=password]{
+    background: #fff url(images/icon-lock.png) no-repeat center left 10px;
+}

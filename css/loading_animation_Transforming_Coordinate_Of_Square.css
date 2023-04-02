@@ -1,0 +1,64 @@
+body {
+  font-family: 'Raleway', 'sans-serif';
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+.loading {
+  position: relative;
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 30px;
+}
+.loading span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  animation: loading 1.5s infinite;
+  background-color: crimson;
+  /* linear은 애니메이션을 부드럽게 표현해준다 */
+}
+.loading span:nth-child(1) {
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+@keyframes loading {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    /* right: 0; -> 트위닝이 안됨 */
+    /* calc(100% - 10px) : 부모의 보더 경계선 바깥을 돌기 때문에 자기 자신의 너비를 뺴주면 보더의 안에서 돌게 된다. */
+    left: calc(100% - 10px);
+    background-color: dodgerblue;
+  }
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+    background-color: orange;
+  }
+  75% {
+    top: calc(100% - 10px);
+    left: 0;
+    background-color: yellowgreen;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Flexbox - Add Margin</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #eee;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    
+    section {
+      width: 1300px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 1px solid red;
+      display: flex;
+      /* align-items 사용하기 : 상단, 하단, 중앙 */
+      /* margin-right로 아티클 간격 띄우기 적용 후 다음에 justify-content 사용하기 */
+      justify-content: center;
+      justify-content: space-between;
+    }
+    section article {
+      padding: 20px;
+      flex-basis: 30%; /* width: 30%; */
+    }
+    .content1 {
+      background-color: yellow;
+    }
+    .content2 {
+      background-color: pink;
+    }
+    .content3 {
+      background-color: plum;
+    }
+    
+    
+    @media (max-width: 768px) {}
+  </style>
+</head>
+<body>
+  
+  <section>
+    <article class="content1">
+      <h2>Content1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem id iure provident praesentium perferendis incidunt quidem, nam placeat voluptates velit aut corporis fuga officiis cum quasi non mollitia nulla molestias.
+      </p>
+    </article>
+    <article class="content2">
+      <h2>Content2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem id iure provident praesentium perferendis incidunt quidem, nam placeat vo
+      </p>
+    </article>
+    <article class="content3">
+      <h2>Content3</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem id iure provident praesen
+      </p>
+    </article>
+  </section>
+    
+</body>
+</html>

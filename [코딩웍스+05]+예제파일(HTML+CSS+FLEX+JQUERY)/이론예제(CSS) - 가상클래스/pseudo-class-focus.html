@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : focus</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        input {
+            padding: 5px;
+            width: 350px;
+            text-align: center;
+        }
+        .red-input:focus { 
+            background: yellow; 
+            color: red; 
+        } 
+        .blue-input:focus { 
+            background: gray; 
+            color: white; 
+        }
+    </style>
+</head>
+
+<body>
+   
+   <h1 class="headline">:focus</h1>
+    <div>
+        <input class="red-input" value="클릭하면 배경은 노랑색, 글자는 빨강색으로 바뀝니다."><br><br>
+        <input class="blue-input" value="클릭하면 배경은 회색, 글자는 흰색으로 바뀝니다.">
+    </div>
+    
+</body>
+</html>

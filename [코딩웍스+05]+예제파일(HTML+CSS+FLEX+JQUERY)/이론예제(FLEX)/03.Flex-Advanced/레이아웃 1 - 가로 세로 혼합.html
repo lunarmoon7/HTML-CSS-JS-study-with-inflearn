@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Flexbox - Column & Row</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #eee;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section {
+      background-color: #fff;
+      width: 1000px;
+      display: flex;
+    }
+    section article {
+      flex: 1;
+    }
+    .content1 {
+      background-color: skyblue;
+    }
+    .content2 {
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+    }
+    .content2 div {}
+    .sub1 {
+      flex: 1;
+      background-color: silver;
+    }
+    .sub2 {
+      flex: 4;
+      background-color: darkmagenta;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    <article class="content1">
+      <h2>Content1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore quasi accusantium est numquam omnis, natus modi illo pariatur facere laboriosam distinctio culpa reiciendis veritatis error odit perferendis ullam recusandae. Minima, maiores corporis, in officiis incidunt, at amet provident ad quia expedita atque accusamus voluptatem error eius labore iure id facilis dolorum culpa exercitationem commodi. Commodi dolorum maiores impedit nemo veritatis consequatur iste, obcaecati modi libero corrupti sit. Dicta alias autem vero obcaecati consequuntur. Ex fugit molestias vero beatae, consectetur dicta dignissimos repudiandae necessitatibus ipsum inventore sed dolore quisquam, aliquid. A vero quidem commodi cum corporis reiciendis asperiores expedita ad voluptatum veritatis cumque similique odio fugit illo alias dolorum iste ex porro, voluptates deleniti itaque, esse cupiditate molestias? Assumenda a, provident natus odit dignissimos sequi, iure dolorem autem impedit obcaecati quisquam, ducimus, harum illum sed quam ipsam necessitatibus quidem reiciendis commodi suscipit. Culpa incidunt maiores voluptates, velit a tempora cumque dicta eaque suscipit magni, omnis similique cum sit odio placeat sed non minima pariatur est commodi aspernatur facere. Earum molestias eveniet autem iusto voluptatem laboriosam voluptas natus enim, quisquam voluptatibus perferendis culpa sapiente provident magnam repellendus. Nostrum sint, necessitatibus odit, a, quae exercitationem sunt ex et possimus magni quis tempore!
+      </p>
+    </article>
+    <article class="content2">
+      <div class="sub1">
+        <h2>Sub1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quisquam.
+        </p>
+      </div>
+      <div class="sub2">
+        <h2>Sub2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quisquam.
+        </p>
+      </div>
+    </article>
+  </section>
+    
+</body>
+</html>

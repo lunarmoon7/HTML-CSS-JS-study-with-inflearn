@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 chaining</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		button {
+			background-color: dodgerblue;
+			color: white;
+			padding: 10px;
+			border: none;
+			margin: 20px 0;
+			cursor: pointer;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>  
+	$('.chain-btn').click(function(){
+		$('p').css({'color':'red','background':'lightgray'}).slideUp(2000).slideDown(2000);
+	});
+		</pre>
+    </fieldset>   	
+    
+    
+    
+    <button class="chain-btn">문단 색상 바꾸고 위로 사라지고 다시 원상태로 돌리는 chaining</button>
+    <p>
+    	JQuery란 엘리먼트를 선택하는 강력한 방법과 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는 자바스크립트 라이브러리
+    </p>
+    
+    <script>
+		$('.chain-btn').click(function(){
+			$('p').css({'color':'red','background':'lightgray'}).slideUp(2000).slideDown(2000);
+		});
+	</script>
+    
+</body>
+</html>

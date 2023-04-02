@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 animate</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {
+			background: #98bf21;
+			height: 100px;
+			width: 100px;
+			position: relative;
+		}
+		button {
+			margin: 10px 0;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    <legend>JS Code</legend>
+    <pre>
+	$('button').click(function(){
+		$('div').animate({
+			left: '200px',
+			height: '200px',
+			width: '200px',
+			opacity: '0.5'
+		},500);
+	});
+	</pre>
+    </fieldset>
+    
+    <button>start animation</button>
+   	<div></div>
+   	
+   	<script>
+		$('button').click(function(){
+			$('div').animate({
+				left: '200px',
+				height: '200px',
+				width: '200px',
+				opacity: '0.5'
+			},500);
+		});
+	</script>
+   	
+
+    
+</body>
+</html>

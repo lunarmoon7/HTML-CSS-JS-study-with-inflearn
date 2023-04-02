@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        /* default CSS */
+        
+        h2 {
+            float: left;
+            margin-right: 25px;
+            margin-top: 18px;
+        }
+        .popup {
+            float: left;
+            width: 340px;
+            background: #727272;
+            padding: 10px;
+            border-radius: 6px;
+            color: #FFF;
+            position: relative;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .popup:before {
+            content: "";
+            display: block;
+            width: 0; 
+            height: 0; 
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 12px solid #727272; 
+            position: absolute;
+            top: 16px;
+            left: -12px;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+
+<div class="box">
+    <h2>What is CSS?</h2>
+    <div class="popup">
+        Cascading Style Sheets is a style sheet language used for describing
+        the presentation semantics of a document written in a markup language.
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 가상클래스</title>
+    
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: bold 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        
+        /* focus 예제 */
+        input:focus {
+            background-color: #ddd;
+        }
+        
+        /* 페이징(pagination) 예제 */
+        a {
+            padding: 4px;
+            margin-right: 3px;
+            width: 15px;
+            color: #000;
+            font: bold 12px 'tahoma';
+            border: 1px solid #eee;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:focus {  
+            color:#fff;  
+            border:1px solid #f40; background-color:#f40;  
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1 class="headline">:focus 가상 클래스 – 웹 요소에 마우스 커서를 클릭했을 때 스타일 </h1>
+    
+    아이디 <input type="text"> 비밀번호 <input type="password"> <input type="submit" value="로그인">
+    
+    <br>
+    
+
+    <div>  
+        <a href="#">1</a>  
+        <a href="#">2</a>  
+        <a href="#">3</a>  
+        <a href="#">4</a>  
+        <a href="#">5</a>  
+        <a href="#">6</a>  
+        <a href="#">7</a>  
+        <a href="#">8</a>  
+        <a href="#">9</a>  
+        <a href="#">10</a>  
+    </div>
+
+
+</body>
+</html>

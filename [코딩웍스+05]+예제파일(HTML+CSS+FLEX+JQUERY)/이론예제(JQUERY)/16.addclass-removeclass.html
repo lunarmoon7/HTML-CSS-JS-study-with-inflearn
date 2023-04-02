@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 addClass removeClass</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: uppercase; color: white;}
+		button {padding: 5px 8px; margin: 20px 0; cursor: pointer;}
+		.on {
+			background-image: url(images/css-bg.png);
+			background-size: cover;
+			border-radius: 20px;
+			border: 5px solid yellowgreen;
+			box-shadow: 0 0 20px gray;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+	//기본형
+		$('선택자').addClass('추가할 클래스명');
+		$('선택자').removeClass('제거할 클래스명');
+    =================================================== 
+		$('.add-btn').click(function(){
+			$('div').addClass('on');
+		});
+		$('.remove-btn').click(function(){
+			$('div').removeClass('on');
+		});
+    </pre>
+    </fieldset>   	
+
+    
+    <button class="add-btn">클래스 추가하기</button>
+    <button class="remove-btn">클래스 제거하기</button>
+    <div>class box</div>
+    
+    <script>
+		$('.add-btn').click(function(){
+			$('div').addClass('on');
+		});
+		$('.remove-btn').click(function(){
+			$('div').removeClass('on');
+		});
+	</script>
+
+    
+</body>
+</html>

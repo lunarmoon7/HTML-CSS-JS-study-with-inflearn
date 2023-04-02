@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 선택자</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		img {width: 50%;}
+		button {cursor: pointer}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('.btn1').on('click',function(){
+			$('.frame img').attr({'src':'images/pic1.jpg','title':'시계1'});
+		});
+		$('.btn2').on('click',function(){
+			$('.frame img').attr({'src':'images/pic2.jpg','title':'시계2'});
+		});
+	</pre>
+    </fieldset>
+    
+	
+   
+    <button class="btn1">이미지 속성 변경하기1</button>
+    <button class="btn2">이미지 속성 변경하기2</button>
+    <p class="frame">
+    	<img src="images/pic1.jpg" title="시계1">
+    </p>
+    
+    
+    <script>
+        $('.btn1').on('click',function(){
+            $('.frame img').attr({'src':'images/pic1.jpg','title':'시계1'});
+        });
+        $('.btn2').on('click',function(){
+            $('.frame img').attr({'src':'images/pic2.jpg','title':'시계2'});
+        });
+	</script>
+    
+</body>
+</html>

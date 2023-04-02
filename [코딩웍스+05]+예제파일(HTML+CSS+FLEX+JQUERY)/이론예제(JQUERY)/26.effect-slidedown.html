@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 slideDown</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		.panel, .flip {
+			padding: 5px;
+			text-align: center;
+			background-color: #e5eecc;
+			border: solid 1px #c3c3c3;
+		}
+		.panel {
+			padding: 30px;
+			display: none;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>  
+	$('.flip').click(function(){
+		$('.panel').slideDown('fast');
+	});          
+    </pre>
+    </fieldset>   	
+    
+    
+    
+    <div class="flip">촛불은 끝나지 않은 우리의 미래”...문 대통령, 촛불집회 1주년 메시지</div>
+	<div class="panel">
+		오늘, 촛불집회 1년을 기억하며 촛불의 의미를 되새겨봅니다.
+		촛불은 위대했습니다.
+		민주주의와 헌법의 가치를 실현했습니다.
+		정치변화를 시민이 주도했습니다.
+		새로운 대한민국의 방향을 제시했습니다.
+		촛불은 새로웠습니다.
+		뜻은 단호했지만 평화적이었습니다.
+		이념과 지역과 계층과 세대로 편 가르지 않았습니다.
+		나라다운 나라, 정의로운 대한민국을 요구하는 통합된 힘이었습니다.
+		촛불은 끝나지 않은 우리의 미래입니다.
+		국민과 함께 가야 이룰 수 있는 미래입니다.
+		끈질기고 지치지 않아야 도달할 수 있는 미래입니다.
+		촛불의 열망과 기대, 잊지 않겠습니다.
+		국민의 뜻을 앞세우겠습니다.
+		국민과 끝까지 함께 가겠습니다.
+    </div>
+
+	<script>
+        $('.flip').click(function(){
+            $('.panel').slideDown('fast');
+        }); 
+	</script>
+
+    
+</body>
+</html>

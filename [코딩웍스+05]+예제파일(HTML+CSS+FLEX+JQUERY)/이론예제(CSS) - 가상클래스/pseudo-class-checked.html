@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : checked</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+        input[type="radio"]:checked {
+            box-shadow: 0 0 0 2px red;
+        }
+    </style>
+</head>
+
+<body>
+   <h1 class="headline">:checked</h1>
+    <div>
+      <input type="radio" name="level"><label>초급</label>
+      <input type="radio" name="level"><label>초중급</label>
+      <input type="radio" name="level"><label>중급</label>
+      <input type="radio" name="level"><label>중고급</label>
+      <input type="radio" name="level"><label>고급</label>
+    </div>  
+
+    <div>
+      <input type="checkbox"><label for="opt-in">아이디 저장하기</label>
+    </div>
+    
+</body>
+</html>

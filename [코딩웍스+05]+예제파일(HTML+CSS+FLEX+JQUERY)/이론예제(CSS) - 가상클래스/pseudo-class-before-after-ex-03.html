@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 20px; }
+        /* default CSS */
+        
+        h1 {
+            font-size: 26px;
+        }
+        .link-service:before {
+            content: url(images/logo-daum.jpg);
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .link-service:after {
+            content: "Daum 사전앱을 다운로드하세요!";
+            font-size: 16px;
+            font-weight: normal;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        .link-service {
+            display: inline-block;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1 class="link-service">사전</h1>
+
+</body>
+</html>

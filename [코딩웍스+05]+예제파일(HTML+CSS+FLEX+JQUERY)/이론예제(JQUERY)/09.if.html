@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 if</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 800px;height: 50px;background-color: dodgerblue;}
+		input {padding: 10px; font-size: 20px;}
+		button {padding: 8px; font-size: 20px;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+    //기본형
+		var num = $('input').val();
+		$('.login').click(function(){
+			if(){}
+			else if(){}
+			else if(){}
+			else {}
+		});
+    ============================================================
+		$('.login').click(function(){
+			var num = $('input').val();
+
+			if(num==''){
+				alert('나이를 입력하세요.');
+			}
+			else if(num<20){
+				alert('미성년입니다.');
+			}
+			else if(num>=20){
+				alert('성인입니다.');
+			}
+			else {
+				alert('나이를 숫자로 입력하세요.');
+			}
+		});
+   
+    </pre>
+    </fieldset>   	
+    
+    
+    
+    <p>--- 20세 이상 성인인증 체크 제이쿼리 if 조건문 ---</p>
+    <input type="text">
+    <button class="login">성인인증</button>
+    <br>
+    <br>
+    
+    <script>
+		$('.login').click(function(){
+			var num = $('input').val();
+
+			if(num==''){
+				alert('나이를 입력하세요.');
+			}
+			else if(num<20){
+				alert('미성년입니다.');
+			}
+			else if(num>=20){
+				alert('성인입니다.');
+			}
+			else {
+				alert('나이를 숫자로 입력하세요.');
+			}
+		});
+	</script>
+    
+</body>
+</html>

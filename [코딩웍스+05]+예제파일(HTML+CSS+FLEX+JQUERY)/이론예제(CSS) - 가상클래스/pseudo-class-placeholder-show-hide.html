@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : placeholder(show & hide)</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        input[type="email"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid orange;
+        }
+        input[type="email"]::placeholder {
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+  
+  <h1 class="headline">Javascript Handler : placeholder(show & hide)</h1>
+   
+   <h3>클릭했을 경우 placeholder 감추기</h3>
+    
+   <input type="email" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일 주소를 입력하세요.'">
+    
+    
+</body>
+</html>

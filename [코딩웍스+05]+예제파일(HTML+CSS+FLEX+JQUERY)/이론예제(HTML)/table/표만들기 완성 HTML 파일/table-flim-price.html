@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            table-layout: fixed;
+        }
+        th,td {
+            border: 1px solid #555;
+            text-align: center;
+            padding: 5px;
+        }
+        th {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            height: 50px;
+            font-size: 18px;
+        }
+        thead, tbody, tfoot {
+            border: 2px solid #333;
+        }
+        caption {
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+   <table>
+        <caption>(본사 정식 소비자 가격)</caption>
+        <colgroup>
+            <col span="2" style="background-color: #e4ecd0;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">제품명</th>
+                <th>
+                    ★★★★★★★<br>버텍스
+                </th>
+                <th>
+                    ★★★★★<br>래티튜드
+                </th>
+                <th>
+                    ★★★★<br>아티젠IB
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">국내차량</td>
+                <td>썬루프</td>
+                <td>150,000</td>
+                <td>90,000</td>
+                <td>170,000</td>
+            </tr>
+            <tr>
+                <td>파노라마 썬루프</td>
+                <td>330,000</td>
+                <td>200,000</td>
+                <td>170,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <td rowspan="2">수입차량</td>
+               <td>썬루프</td>
+               <td>180,000</td>
+               <td>110,000</td>
+               <td>90,000</td>
+            </tr>
+            <tr>
+               <td>파노라마 썬루프</td>
+               <td>350000</td>
+               <td>240,000</td>
+               <td>200,000</td>
+            </tr>     
+        </tfoot>     
+   </table>
+    
+</body>
+</html>

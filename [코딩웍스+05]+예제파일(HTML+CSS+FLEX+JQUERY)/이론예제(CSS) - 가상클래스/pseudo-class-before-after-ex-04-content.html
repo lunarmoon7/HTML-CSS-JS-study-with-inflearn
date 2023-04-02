@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        /* default CSS */
+        
+        a:after {
+            content: "("attr(href)")";
+            color: #333;
+        }
+        
+        ul { list-style: none; padding: 0;}
+        li:before {
+            content: "※";
+            padding-right: 10px;
+            color: red;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div>
+       <h1>CSS content Property</h1>
+       <p>
+           <a href="http:/www.easynamazing.com">이지앤에듀 코딩스쿨</a> : HTML+CSS 코딩스쿨, WP Desing Studio
+       </p>
+    </div>
+    
+    <div>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+    </div>
+
+</body>
+</html>

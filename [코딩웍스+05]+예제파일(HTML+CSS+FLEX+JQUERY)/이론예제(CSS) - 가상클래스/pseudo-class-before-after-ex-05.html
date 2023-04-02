@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        /* default CSS */
+        
+        /* ex #01 */
+        a {
+            float: left;
+            display: block;
+            width: 100px;
+            background-color: yellow;
+            border: 1px solid grey;
+            margin: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        p::before {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        /* ex #02 */
+        ul {
+            margin-left: 10px ;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            line-height: 2em;
+        }
+        ul li:before {
+            content: "♥";
+            padding-right: 10px;
+        }
+        ul li.sale:after{
+            content: "SALE";
+            font-size: 10px;
+            padding: 2px 6px; 
+            margin: 0 5px;
+            border-radius: 2px;
+            color:#fff; 
+            background: #f55;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at purus ac lacus ultrices vehicula.</p>
+    </div>
+    
+    <div>
+        <ul>
+          <li class="sale">아메리카노 - 4,000원</li>
+          <li>에스프레소 - 3,500원</li>
+          <li>카페라떼 - 4,300원</li>
+          <li class="sale">카푸치노 - 4,500원</li>
+        </ul>
+    </div>
+
+</body>
+</html>

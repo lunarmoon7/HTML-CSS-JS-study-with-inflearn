@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 animate</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>t>
+    <!--내부스타일-->
+    <style>
+		div {
+			background: #98bf21;
+			height: 100px;
+			width: 800px;
+			display: none;
+		}
+		button {
+			margin: 10px 0;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    <legend>JS Code</legend>
+    <pre>
+		$('.toggle-btn').click(function(){
+			$('div').animate({
+				height: 'toggle'
+			},'fast');
+		});
+	</pre>
+    </fieldset>
+    
+	
+    
+    <button class="toggle-btn">toggle animation</button>
+   	<div></div>
+   	
+   	<script>
+        $('.toggle-btn').click(function(){
+            $('div').animate({
+                height: 'toggle',
+                //width: 'toggle'
+            },'fast');
+        });
+	</script>
+   	
+
+    
+</body>
+</html>

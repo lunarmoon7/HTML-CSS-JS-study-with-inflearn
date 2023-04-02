@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 선택자</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+/*		img {width: 50%;}*/
+		button {cursor: pointer}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('ul li').children().css({'color':'red'});
+		$('ul li').children('b').css({'color':'blue'});
+	</pre>
+    </fieldset>
+    
+	
+   
+    <ul>
+		<li><strong>리스트1</strong></li>
+		<li>리스트2</li>
+		<li>리스트3</li>
+		<li><b>리스트4</b></li>
+    </ul>
+    
+    <script>
+        $('ul li').children().css({'color':'red'});
+        $('ul li').children('b').css({'color':'blue'});
+	</script>
+    
+</body>
+</html>

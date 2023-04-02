@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        /* default CSS */
+        
+        h2 {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h2:after {
+            content: "";
+            display: inline-block;
+            margin: 5px 20px;
+            height: 1px;
+            background-color: #999;
+            width: 300px;
+        }
+        h2:before {
+            content: "";
+            display: inline-block;
+            margin: 5px 20px;
+            height: 1px;
+            background-color: #999;
+            width: 300px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<div>
+    <h2>What is CSS?</h2>
+</div>
+
+</body>
+</html>

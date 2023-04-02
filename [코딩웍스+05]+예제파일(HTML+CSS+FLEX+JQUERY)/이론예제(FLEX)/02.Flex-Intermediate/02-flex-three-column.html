@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Flexbox - Three Column</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #eee;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    
+    section {
+      width: 1300px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      display: flex;
+    }
+    article.main {
+      flex: 3;
+      order: 2
+    }
+    article.side1 {
+      flex: 1;
+      order: 1;
+    }
+    article.side2 {
+      flex: 1;
+      order: 3
+    }
+    
+    
+    @media (max-width: 768px) {}
+  </style>
+</head>
+<body>
+  
+  <section>
+    <article class="main">
+      <h2>Main Content</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem consectetur asperiores consequatur officia id eligendi vero maiores numquam, aliquam ipsam, ratione praesentium nobis expedita fuga iusto. Optio at quibusdam pariatur, distinctio quos animi nisi beatae aperiam. Nisi nesciunt consequatur esse, corporis amet aperiam eveniet, quisquam ex. Nulla iure libero provident beatae nobis quisquam omnis suscipit nam repellat sunt et animi quia officiis itaque facilis voluptate accusantium aperiam nesciunt eligendi, aliquid odio obcaecati veritatis. Ipsum illo in ullam earum deserunt animi alias mollitia debitis sunt dicta. Sint mollitia quaerat minus minima id consequatur. Reiciendis voluptates ut, deserunt nostrum sapiente id neque provident ad sunt voluptatibus est cum, esse porro nisi possimus assumenda doloremque. Nulla praesentium animi assumenda voluptas, quia necessitatibus sed explicabo quam cumque voluptatum maiores veniam soluta. Dolorem, quos quis vero voluptas debitis quas sapiente nulla aut consequatur. Facilis alias ipsam, vitae nihil fugit beatae earum nemo quod enim laudantium, ea quo molestiae magnam magni minus recusandae, non ut et expedita soluta, quisquam rerum sapiente! Culpa eius esse, aliquam explicabo commodi nihil earum sequi quas facilis optio dolor, hic aperiam nam quibusdam quisquam officiis, blanditiis, porro ad possimus ipsa dolore est vel nobis. Voluptatibus quibusdam dolorem quaerat unde doloremque.
+    </article>
+    <article class="side1">
+      <h2>Side1 Content</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, mollitia!
+    </article>
+    <article class="side2">
+      <h2>Side2 Content</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quisquam.
+    </article>
+  </section>
+  
+</body>
+</html>

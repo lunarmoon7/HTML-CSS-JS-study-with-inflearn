@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 scrollTop</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: uppercase; color: white;}
+		button {padding: 5px 8px; margin: 20px 0; cursor: pointer; width: 240px;}
+		p {font-size: 20px;}
+		p span {color: red;}
+		body {height: 2500px;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$(window).scroll(function(){
+			var abc = $(this).scrollTop(); // 스크롤한 만큼의 거리를 변수 abc에 저장
+			$('p').text(abc); //저장된 변수 abc를 가지고와 p에 출력하기
+		});
+    </pre>
+    </fieldset>   	
+    
+    <p></p>
+    
+    <script>
+		$(window).scroll(function(){
+			var abc = $(this).scrollTop(); // 스크롤한 만큼의 거리를 변수 abc에 저장	</script>
+			$('p').text(abc); //저장된 변수 abc를 가지고와 p에 출력하기
+		});    
+</body>
+</html>

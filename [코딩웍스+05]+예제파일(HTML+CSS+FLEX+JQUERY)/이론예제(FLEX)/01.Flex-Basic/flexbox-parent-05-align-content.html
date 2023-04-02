@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>flex - align-content</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .info {
+      padding: 30px;
+    }
+
+    .parent {
+      border: 5px solid green;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+
+    .parent div {
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      margin: 5px;
+      background-color: crimson;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="info">
+    <h2>부모요소에 사용하는 속성</h2>
+    <ul>
+      <li>flex-start | flex-end | center | space-between | space-around | stretch (부모요소에 wrap 속성이 있는 경우 여러 개의 자식요소들의 간격 조절, 수직 수평 정렬을 변경)</li>
+    </ul>
+  </div>
+
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child4">4</div>
+    <div class="child5">5</div>
+    <div class="child6">6</div>
+    <div class="child7">7</div>
+    <div class="child8">8</div>
+    <div class="child9">9</div>
+    <div class="child10">10</div>
+  </div>
+
+</body>
+
+</html>

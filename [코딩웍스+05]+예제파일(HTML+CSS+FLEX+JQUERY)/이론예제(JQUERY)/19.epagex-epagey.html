@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 e.pageX e.pageY</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: uppercase; color: white;}
+		button {padding: 5px 8px; margin: 20px 0; cursor: pointer; width: 240px;}
+		p {font-size: 20px;}
+		p span {color: red;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	 <pre>
+		$(window).mousemove(function(e){
+			var x = e.pageX; //화면의 x좌표값을 변수 x에 넣기
+			var y = e.pageY; //화면의 y좌표값을 변수 y에 넣기
+			$('.posx').text(x); //변수 x를 가져와 .posx에 표시하기
+			$('.posy').text(y); //변수 x를 가져와 .posy에 표시하기
+		});
+    </pre>
+    </fieldset>   	
+    
+    
+    <p>X축 좌표 : <span class="posx"></span></p>
+    <p>Y축 좌표 : <span class="posy"></span></p>
+    
+    <script>
+		$(window).mousemove(function(e){
+			var x = e.pageX; //화면의 x좌표값을 변수 x에 넣기
+			var y = e.pageY; //화면의 y좌표값을 변수 y에 넣기
+			$('.posx').text(x); //변수 x를 가져와 .posx에 표시하기
+			$('.posy').text(y); //변수 x를 가져와 .posy에 표시하기
+		});
+	</script>
+
+    
+</body>
+</html>

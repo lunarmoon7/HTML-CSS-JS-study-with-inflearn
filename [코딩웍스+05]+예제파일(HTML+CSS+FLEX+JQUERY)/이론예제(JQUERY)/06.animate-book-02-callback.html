@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 이벤트 메소드</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <script src="js-css/jquery.easing.1.3.js"></script>
+    <script src="js-css/jquery-ui.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 800px;height: 50px;background-color: #1f8fff;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		//마우스를 올렸을 때
+		$('div').mouseenter(function(){
+			$('div').stop().animate({'width':'800px','height':'100px'},800,function(){
+				$('div').stop().animate({'background-color':'tomato'},800);
+			});
+		});
+
+		//마우스가 벗어났을 때
+		$('div').mouseleave(function(){
+			$('div').stop().animate({'width':'800px','height':'50px'},800,function(){
+				$('div').stop().animate({'background-color':'dodgerblue'},800);
+			});
+		});
+	</pre>
+    </fieldset>
+    
+   	<div></div>
+   	
+   	<!--
+	easing.js 다운로드
+	https://plugins.jquery.com/jquery.easing/
+   	-->
+   	
+   	<script>
+        //마우스를 올렸을 때
+        $('div').mouseenter(function(){
+            $('div').stop().animate({width:'800px',height:'100px'},800,'easeOutBounce',function(){
+                $('div').stop().animate({'background-color':'red'},800);
+//					alert('왜 안되는거야!!!!!!!!!!!!!');
+            });
+        });
+
+        //마우스가 벗어났을 때
+        $('div').mouseleave(function(){
+            $('div').stop().animate({width:'800px',height:'50px'},800,'easeOutBounce',function(){
+                $('div').stop().animate({'background-color':'#1e90ff'},800);
+            });
+        });
+	</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    font-family: 'Noto Sans KR',sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    background-color: #eee;
+    font-size: 15px;
+    font-weight: 300;
+    color: #222;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+/* .container {} */
+
+header {
+    border-bottom: 1px solid lightgray;
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+section {
+    height: calc(100vh - 60px);
+    
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-type {}
+
+.login-type h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin-bottom: 10px;   
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:nth-of-type(1) {
+    /* background-color: #fff; */
+    color: #222;
+    background: #fff url(../images/logo-mobile.png) no-repeat center left;
+}
+
+.btn:nth-of-type(2) {
+    background: #898c9b url(../images/logo-email.png) no-repeat center left 13px;
+}
+
+.btn:nth-of-type(3) { 
+    background: #11ce00 url(../images/logo-naver.png) no-repeat center left 13px;
+}
+
+.btn:nth-of-type(4) {
+    background: #0076fe url(../images/logo-facebook.png) no-repeat center left 13px;
+}
+
+.btn:nth-of-type(5) {
+    background: #00c026 url(../images/logo-line.png) no-repeat center left 10px;
+}
+
+.or-text {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.or-text:before,
+.or-text:after {
+    content: '';
+    position: absolute;
+    background-color: lightgray;
+    height: 1px;
+    width: 44%;
+    position: absolute;
+    top: 11px;
+}
+
+.or-text:before {
+    left: 0;
+}
+.or-text:after {
+    right: 0;
+}
+
+.login-footer {}
+
+.login-footer p {
+    text-align: center;
+}
+
+.login-footer p a {
+    font-weight: normal;
+}
+
+.login-footer p a:hover {
+    text-decoration: underline;
+}

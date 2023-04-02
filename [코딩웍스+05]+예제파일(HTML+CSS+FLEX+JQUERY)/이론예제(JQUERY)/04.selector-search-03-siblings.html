@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 선택자</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+/*		img {width: 50%;}*/
+		button {cursor: pointer}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		$('ul li span').siblings().css({'color':'red'});
+		$('ul li span').siblings('em').css({'color':'blue'});
+	</pre>
+    </fieldset>
+    
+	
+   
+    <ul>
+		<li><span>리스트1</span> <b>형제요소</b></li>
+		<li><span>리스트2</span> <b>형제요소</b></li>
+		<li><span>리스트3</span> <em>형제요소</em></li>
+		<li><span>리스트4</span> <em>형제요소</em></li>
+    </ul>
+    
+    <script>
+        $('ul li span').siblings().css({'color':'red'});
+        $('ul li span').siblings('em').css({'color':'blue'});
+	</script>
+   
+   <!-- W3C Exercise : https://www.w3schools.com/jquery/jquery_traversing_siblings.asp -->
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    transition: transform .6s linear;
+    cursor: pointer;
+}
+
+.content.front {
+    z-index: 1;
+}
+
+.content.back {
+}
+
+.container:hover .content.front{
+    transform: rotateY(-180deg);
+    z-index: 0;
+}
+.container:hover .content.back{
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+

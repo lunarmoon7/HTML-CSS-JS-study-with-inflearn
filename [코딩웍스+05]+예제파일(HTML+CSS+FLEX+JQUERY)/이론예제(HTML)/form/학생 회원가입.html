@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <title>로그인/회원가입</title>
+   
+   <style type="text/css">
+      body, p {
+         font-size: 13px;
+      }
+      form fieldset {
+         margin : 10px 0; 
+         width: 600px;
+      }
+      form legend {
+         font-weight: bold;
+      }
+      form ul li {
+         list-style: none;
+         margin: 10px 0;
+      }
+      form label {
+         width: 150px;
+         float: left;
+      }
+   </style>
+   
+</head>
+
+<body>
+  
+  <h2>Student login</h2>
+  <form action="">
+     <fieldset>
+       <legend>Student Login Information</legend>
+        <ul>
+           <li><label for="">ID: </label><input type="text" size="15"></li>
+           <li><label for="">Password: </label><input type="password" size="15"></li>
+           <li><label for="">Confirm Password: </label><input type="password" size="15"></li>
+        </ul>
+     </fieldset>
+     <input type="submit" value="Login">
+     <input type="reset" value="Reset">
+   </form>
+   
+   <h2>Join a new student</h2>
+   <form action="">
+     <fieldset>
+       <legend>Enter student information</legend>
+        <ul>
+           <li><label for="">Name: </label><input type="text" size="15"></li>
+           <li><label for="">E-mail: </label><input type="email" size="15"></li>
+           <li><label for="">Contact: </label><input type="tel" size="15"></li>
+           <li><label for="">Blog/Homepage: </label><input type="url" size="15"></li>
+           <li>
+           <label for="class">Department Selection</label>
+               <select id="class">
+                  <optgroup label="공과대학">
+                     <option value="archi">Department of Architectural Engineering</option>
+                     <option value="mechanic">Department of Mechanical Engineering</option>
+                     <option value="indust">Department of Industrial Engineering</option>
+                     <option value="elec">Department of Electrical and Electronic Engineering</option>
+                     <option value="computer">Computer Engineering</option>
+                     <option value="chemical">Department of Chemical Engineering</option>
+                  </optgroup>
+                  <optgroup label="인문대학">
+                     <option value="history">Department of History</option>
+                     <option value="lang">Department of Linguistics</option>
+                     <option value="philo">Department of Philosophy</option>
+                  </optgroup>
+               </select>
+            </li>
+        </ul>
+     </fieldset>
+     <fieldset id="register">
+    <legend>Please select course</legend>
+    	<ul>      
+	        <li>
+            	<label class="reg" for="spk">Application Course<small>(conversation)</small></label>
+                <input type="radio" name="spk" id="spk" value="low" checked>English Conversation (Elementary)
+                <input type="radio" name="spk" id="spk" value="middle">English Conversation (Intermediate)
+                <input type="radio" name="spk" id="spk" value="high">English Conversation (Advanced)
+            </li>
+	        <li>
+            	<label class="reg" for="cert">Application Course<small>(Qualification)</small></label>
+                <input type="radio" name="spk" id="cert" value="toeic">TOEIC
+                <input type="radio" name="spk" id="cert" value="toefl">TOEFL
+                <input type="radio" name="spk" id="cert" value="opic">OPIC
+            </li>                    
+        	<li>
+            	<label class="reg" for="pre">Interests</label>
+                <input type="checkbox" name="pre" id="pre"  value="grammar">grammar
+                <input type="checkbox" name="pre" id="pre"  value="voca">Vocaburary
+                <input type="checkbox" name="pre" id="pre"  value="grammar">conversation
+                <input type="checkbox" name="pre" id="pre"  value="listening">Listening
+                <input type="checkbox" name="pre" id="pre"  value="news">Listen to the news
+                <input type="checkbox" name="pre" id="pre"  value="reading">reading                                
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset id="upload">
+    <legend>Upload a copy of student ID card</legend>
+    	<label for="student_cert"><span>Copy of Student ID Card</span></label>
+        <input type="file" id="student_cert">
+      </fieldset>
+    <fieldset>
+       <legend>Please enter your inquiry.</legend>
+       <textarea name="" id="" cols="80" rows="5"></textarea>
+    </fieldset>
+     <input type="submit" value="Sign Up">
+     <input type="reset" value="Reset">
+  </form>
+   
+</body>
+</html>

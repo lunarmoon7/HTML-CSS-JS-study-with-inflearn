@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <title>신청서양식</title>
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap" rel="stylesheet">
+
+   <style type="text/css">
+      body, p {
+         font-size: 16px;
+          font-family: 'Noto Sans KR', sans-serif;
+      }
+      form fieldset {
+         margin : 10px 0; 
+         width: 600px;
+      }
+      form legend {
+         font-weight: bold;
+      }
+      form ul li {
+         list-style: none;
+         margin: 10px 0;
+      }
+      form label {
+         width: 150px;
+         float: left;
+      }
+   </style>
+   
+</head>
+
+<body>
+  
+  <h2>Mailing List</h2>
+  <form action="">
+     E-mail <input type="email" size="25">
+     <input type="submit" value="submit">
+     <input type="Reset" value="Reset">
+  </form>
+  
+  <p>&nbsp;</p>
+  
+  <h2>Login</h2>
+  <form action="">
+     ID: <input type="text" size="10">
+     PW: <input type="text" size="10">
+     <input type="submit" value="Login">
+  </form>
+  
+  <p>&nbsp;</p>
+  
+  <h2>여름방학 특강 신청하기</h2>
+  <form action="">
+     <fieldset>
+       <legend>교육과정</legend>
+       <label for="">영어회화</label> <input type="text" size="15" placeholder="오전 9:00~11:00" readonly>
+       (초급레벨)
+     </fieldset>
+     <fieldset>
+        <legend>신청자 기본정보</legend>
+        <ul style="padding-left: 0;">
+           <li><label for="">이름</label> <input type="text" size="15" autofocus required></li>
+           <li><label for="">이메일</label> <input type="email" size="15" autofocus required></li>
+           <li><label for="">비밀번호</label> <input type="password" size="15" autofocus required></li>
+           <li>
+              <label for="">학과</label>
+                 <select id="class">
+                     <option value="archi">학과를 선택하세요.</option>
+                     <option value="mechanic">기계공학과</option>
+                     <option value="indust">건축공학과</option>
+                     <option value="elec">전자공학과</option>
+                     <option value="computer">컴퓨터공학과</option>
+                  </select>
+           </li>
+           <li><label for="">성별</label> <input type="radio" checked> 남자 <input type="radio"> 여자</li>
+           <li><label for="">관심사</label> <input type="checkbox"> 여행 <input type="checkbox"> 게임 <input type="checkbox"> 공연 <input type="checkbox">운동 <input type="checkbox">기타</li>
+        </ul>
+     </fieldset>
+     <input type="submit" value="수강신청">
+     <input type="reset" value="다시쓰기">
+  </form>
+   
+</body>
+</html>

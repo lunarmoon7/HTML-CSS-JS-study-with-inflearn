@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 Get - text() html() val()</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		button {
+			background-color: dodgerblue;
+			color: white;
+			padding: 10px;
+			border: none;
+			margin: 20px 0;
+			cursor: pointer;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>  
+	$('.attr-btn').click(function(){
+		//$('.txt-link').attr('href','http://www.easynamazing.com/class-info'); // attr에 한개의 속성만 사용할 경우
+		$('.txt-link').attr({'href':'http://www.easynamazing.com/class-info', 'title':'웹코딩 실전 훈련, 이지앤에듀'}); //attr에 2개 이상의 속성을 사용할 경우
+	});    
+    	</pre>
+    </fieldset>   	
+    
+    <p>JQuery란 엘리먼트를 선택하는 <b>자바스크립트 라이브러리</b></p>
+    
+    <button class="attr-btn">set attr</button>
+    <a class="txt-link" href="http://www.easynamazing.com">이지앤에듀 코딩스쿨</a>
+    
+    <script>
+		$('.attr-btn').click(function(){
+			//$('.txt-link').attr('href','http://www.easynamazing.com/class-info'); // attr에 한개의 속성만 사용할 경우
+			$('.txt-link').attr({'href':'http://www.easynamazing.com/class-info', 'title':'웹코딩 실전 훈련, 이지앤에듀'}); //attr에 2개 이상의 속성을 사용할 경우
+		});
+	</script>
+
+    
+</body>
+</html>

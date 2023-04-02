@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 get() load() play() pause()</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: none; color: white;}
+		button {cursor: pointer; width: 100px; margin-bottom: 10px}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		var vid = $('video').get(); // 변수 vid에 video 태그 저장
+
+		$('.load-btn').click(function(){
+			vid.load(); // 변수 vid에 저장된 video 태그 불러오기
+		});
+		$('.play-btn').click(function(){
+			vid.play(); // 변수 vid에 저장된 video 태그 재생
+		});
+		$('.pause-btn').click(function(){
+			vid.pause(); // 변수 vid에 저장된 video 태그 일시정지
+		});
+    </fieldset>   	
+
+    
+    <button class="load-btn">load</button>
+    <button class="play-btn">play</button>
+    <button class="pause-btn">pause</button>
+    <div class="video">
+    	<video src="images/ocean.mp4" muted></video>
+    </div>
+    
+    <script>
+		var vid = $('video').get(); // 변수 vid에 video 태그 저장
+
+		$('.load-btn').click(function(){
+			vid.load(); // 변수 vid에 저장된 video 태그 불러오기
+		});
+		$('.play-btn').click(function(){
+			vid.play(); // 변수 vid에 저장된 video 태그 재생
+		});
+		$('.pause-btn').click(function(){
+			vid.pause(); // 변수 vid에 저장된 video 태그 일시정지
+		});
+	</script>
+    
+    
+</body>
+</html>

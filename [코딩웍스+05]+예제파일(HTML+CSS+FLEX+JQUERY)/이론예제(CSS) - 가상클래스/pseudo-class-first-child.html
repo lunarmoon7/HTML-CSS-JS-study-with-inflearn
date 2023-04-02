@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : first-child</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        ul li {
+            color: blue;
+        }
+        ul li:first-child {
+            color: red;
+            font-weight: bold;
+            list-style: none;
+            margin-left: -20px;
+        }
+        ul li:first-child:before {
+            content: "♥";
+            margin-right: 5px;
+        }
+        
+        ul li:last-child {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+  
+   <h1 class="headline">:first-child</h1>
+   <div>
+        <ul>
+            <li>JTBC 다시보기</li>
+            <li>예능</li>
+            <li>뉴스
+                <ul>
+                    <li>정치부회의</li>
+                    <li>사건반장</li>
+                    <li>뉴스룸</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

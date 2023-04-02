@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>flex - flex-wrap</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+    }
+    .info {
+      padding: 30px;
+    }
+    .parent {
+      border: 5px solid green;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .parent div {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      margin: 5px;
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="info">
+    <h2>부모요소에 사용하는 속성</h2>
+    <ul>
+      <li>flex-wrap: nowrap | wrap | wrap-reverse (부모요소의 너비값 안에서 줄바꿈 없이 배치할지 줄을 바꿀지 결정)</li>
+    </ul>
+  </div>
+  
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child3">4</div>
+    <div class="child3">5</div>
+    <div class="child3">6</div>
+  </div>
+  
+</body>
+</html>

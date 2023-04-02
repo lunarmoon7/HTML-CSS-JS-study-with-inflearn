@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : last-of-type</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        p:last-of-type {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   
+   <h1 class="headline">:last-of-type</h1>
+   
+    <div>
+        <h2>꼭! 봐야하는 영화</h2>
+        <p>공범자들</p>
+        <p>다이빙벨</p>
+        <p>자백</p>
+        <p>그들이 없는 7년</p>
+    </div>
+    
+</body>
+</html>

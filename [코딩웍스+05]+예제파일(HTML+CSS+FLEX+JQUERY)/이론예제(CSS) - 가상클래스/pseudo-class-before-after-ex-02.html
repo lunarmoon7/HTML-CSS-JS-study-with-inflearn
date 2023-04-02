@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 20px; }
+        /* default CSS */
+        
+        .read-this:before {
+            content: "필독";
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 11px;
+            padding: 0 3px;
+        }
+        
+        .new-item:after {
+            content: url(images/tag_sale.gif);
+            vertical-align: middle;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <p class="read-this">
+        이지앤에듀 웹퍼블리셔 과정을 수강하시려면 기본적인 컴퓨터 활용능력이 반드시 필요합니다.
+    </p>
+    
+    <p class="new-item">
+        니코트 파스타접시 & Satin 커트러리 BEST 모음
+    </p>
+
+</body>
+</html>

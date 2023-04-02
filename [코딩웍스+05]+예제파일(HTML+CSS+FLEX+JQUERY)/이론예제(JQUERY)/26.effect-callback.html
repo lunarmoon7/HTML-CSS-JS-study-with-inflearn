@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 callback 함수</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		button {
+			background-color: dodgerblue;
+			color: white;
+			padding: 10px;
+			border: none;
+			margin: 20px 0;
+			cursor: pointer;
+		}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>  
+		$('.hide').click(function(){
+			$('p').hide(function(){
+				alert('문단 숨긴 후 경고창 띄우기 callback 함수')	
+			});
+		});
+		</pre>
+    </fieldset>   	
+    
+    
+    
+    <button class="hide">문단 숨긴 후 경고창 띄우기 callback 함수</button>
+    <p>
+    	JQuery란 엘리먼트를 선택하는 강력한 방법과 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는 자바스크립트 라이브러리
+    </p>
+    
+    <script>
+		$('.hide').click(function(){
+			$('p').hide(function(){
+				alert('문단 숨긴 후 경고창 띄우기 callback 함수');
+			});
+		});
+	</script>
+    
+    <!-- callback 함수 사용 안할 경우
+    <script>
+		$('.hide').click(function(){
+			$('p').hide();
+			alert('문단 숨긴 후 경고창 띄우기 callback 함수');
+		});
+	</script>
+    -->
+
+    
+</body>
+</html>

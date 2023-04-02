@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion 속성 - 배치 방법 지정하기</title>
+    
+    <style type="text/css">
+        body { margin: 0; }
+        div {
+            width: 300px;
+            height: 100px;
+            /*margin: 20px;*/
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            float: left;
+        }
+        .box1 {
+            background-color: darkorange;
+        }
+        .box2 {
+            background-color: blue;
+            position: relative; /* relative 속성값 : 상단 30px 왼쪽 50px */
+            top: 100px;
+            left: -150px;
+        }
+    </style>
+    
+</head>
+
+<body>
+   
+   <!-- static : 요소를 흐름에 맞춰 배치합니다. -->
+   <div class="box1">box1</div>
+   <div class="box2">box2</div>
+    
+</body>
+</html>

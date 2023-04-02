@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+
+section {
+    width: 800px;
+}
+
+section .tab-inner {
+    margin-top: 30px;
+}
+
+section .tab-inner .btn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+section .tab-inner .btn li {
+    float: left;
+    /* border: 1px solid #000; */
+    background-color: #ddd;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    border-top: 2px solid transparent;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+}
+
+section .tab-inner .btn li:last-child {
+    border-right: none;
+    width: 170px;
+}
+
+section .tab-inner .btn li.active,
+section .tab-inner .btn li:hover {
+    background-color: white;
+    border-top: 2px solid crimson;
+}
+
+section .tab-inner .tabs {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+}
+
+section .tab-inner .tabs div {
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    height: 380px;
+}
+
+section .tab-inner .tabs div.active {
+    display: block;
+}
+
+section .tab-inner .tabs div img {
+    margin-right: 30px;
+    float: left;
+}
+
+section .tab-inner .tabs div h2 {
+    text-align: center;
+}
+
+section .tab-inner .tabs div p {
+    overflow: hidden;
+}
+
+.heading {}
+
+.heading h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.heading h1 span {
+    color: crimson;
+}
+
+.heading input[type=text] {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: #fff url(search-icon.png) no-repeat center left 5px;
+    padding-left: 35px;
+    background-size: 23px;
+}
+
+.heading input[type=text]::placeholder {
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.heading input[type=text]:focus::placeholder {
+    opacity: 0;
+}
+
+

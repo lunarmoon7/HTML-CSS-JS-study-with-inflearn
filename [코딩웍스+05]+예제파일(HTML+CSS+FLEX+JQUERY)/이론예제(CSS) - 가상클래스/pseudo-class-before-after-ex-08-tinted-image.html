@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Tinted Image w/ Multiple Background</title>
+    <style>
+        .tinted-image {
+            width: 300px; 
+            height: 200px; 
+            position: relative; 
+            background: url(images/bg-woman.jpg);
+            background-size: cover;
+        }
+        .tinted-image:before {
+            content: "Photo Gallery"; 
+            position: absolute; 
+            width: inherit; 
+            height: inherit; 
+            top: 0; 
+            left: 0; 
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <div class="tinted-image"></div>
+          
+</body>
+</html>
+

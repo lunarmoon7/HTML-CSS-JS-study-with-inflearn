@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : nth-child</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/20px 'Nanum Gothic'; }        
+        div { 
+            margin: 0; 
+            width: 500px
+        }
+        div p {
+            padding: 5px;
+        }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        div p:nth-child(odd) {
+            background-color: yellowgreen;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        div p:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        div p:nth-child(odd):before {
+            content: "Q)";
+        }
+        
+        h2:after {
+            content: "그린피스에 대해 자주 묻는 질문과 그에 대한 답변을 제공합니다.";
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+  
+   <h1 class="headline">:nth-child</h1>
+   
+   <h2>자주 묻는 질문들(FAQ)</h2>
+   <div>
+       <p>
+           그린피스의 자원활동에는 어떤 것들이 있습니까?
+       </p>
+       <p>
+           그린피스 자원활동은 모두 자연을 보존함으로써 지속가능한 내일을 만들어가는 캠페인 활동들에 기반합니다. 캠페인의 효과적인 확산과 대중의 공감을 위해 오프라인으로 홍보활동을 하거나 서명참여를 유도할 수 있고, 쉽투어(ship tour)와 같은 특별한 행사에 안내를 하거나 퍼포먼스에 참여하실 수 있습니다. 더불어 자료조사, 통번역, 물품제작 등의 준비활동도 도우실 수 있습니다. 또한 온라인(블로그/SNS 등)을 통해 캠페인을 홍보하는 온라인활동도 가능합니다.
+       </p>
+   </div>
+   <div>
+       <p>
+           자원활동에 참여하면 어떠한 혜택이 있습니까?
+       </p>
+       <p>
+           그린피스는 자원활동가 분들께 금전적인 혜택을 드리지 않습니다. 그러나 환경을 보호하는 구체적인 행동과 경험을 공유합니다. 또, 요청하시는 분께는 봉사활동 확인서를 발급해드립니다.
+       </p>
+   </div>
+   <div>
+       <p>
+           자원활동을 하는데 자격요건이 있나요? (나이/지역/특기)
+       </p>
+       <p>
+           그린피스 자원활동에는 특별한 능력이나 특기가 필요하지 않으며 나이, 성별, 지역에 상관없이 참여하실 수 있습니다. 등록하실 때 본인에 대해 가급적 자세히 알려주시면 최대한 그에 맞는 활동을 제시합니다. 미성년자의 경우, 캠페인 활동내용에 따라 부모동의서를 요청드릴 수 있습니다.
+       </p>
+   </div>
+   <div>
+       <p>
+           특별한 취미나 특기가 있습니다. 재능기부도 가능한가요?
+       </p>
+       <p>
+           특별한 취미나 특기가 있으시면 좀 더 창의적인 활동을 함께 할 수 있습니다. 악기를 연주한다거나, 클라이밍, 잠수와 같은 레포츠 특기가 있다면 자원봉사활동 신청서 관심분야에 상세히 적어주십시오. 컴퓨터 프로그래밍, 디자인, 사진, 영상 등 어떠한 특기라도 그린피스 캠페인을 풍성하게 합니다.
+       </p>
+   </div>
+    
+</body>
+</html>

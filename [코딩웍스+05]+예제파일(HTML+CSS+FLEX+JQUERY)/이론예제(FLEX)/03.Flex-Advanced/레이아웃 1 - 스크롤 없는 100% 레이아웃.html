@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>01. 스크롤이 없는 100% 레이아웃</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      height: 100vh;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header,
+    .content1,
+    .navi,
+    .main  {
+      padding: 1em;
+    }
+    header {
+      background-color: yellow;
+    }
+    .content1 {
+      background-color: yellowgreen;
+    }
+    .content2 {
+      display: flex;
+      height: 100%;
+    }
+    .navi {
+      background-color: pink;
+      flex: 1;
+    }
+    .main {
+      background-color: lightblue;
+      flex: 3;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <h2>Header</h2>
+    </header>
+    <div class="content1">
+      <h2>Banner</h2>
+    </div>
+    <div class="content2">
+      <div class="navi">
+        <h2>Navi</h2>
+      </div>
+      <div class="main">
+        <h2>Main</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo magni aspernatur voluptatem consequuntur, sed illum odit maxime quasi. Praesentium, doloremque sunt voluptates reprehenderit, sed enim tempora aspernatur sequi commodi officiis beatae deserunt voluptatem fugiat ex asperiores velit quibusdam iusto. Officiis voluptates aut, odit porro cum vitae aperiam. Provident aspernatur nesciunt ipsa autem cupiditate ratione quod exercitationem quidem ab explicabo possimus quos sint, nostrum magni, quasi quo accusamus porro illum laborum culpa a vel! Adipisci excepturi quae tempore, nulla unde vero. Commodi ratione architecto, voluptatibus obcaecati libero minima error, qui nobis iure maiores alias officia, esse officiis magnam dolore laboriosam consectetur adipisci velit temporibus quas eius sit natus pariatur laudantium! Accusamus possimus ex aliquam in fugiat, nobis quod, est quae ipsum alias expedita doloribus nesciunt voluptas architecto illum praesentium, temporibus hic. Cupiditate voluptas velit officiis iure non autem placeat. Aut eos repellat quia maiores corporis quasi debitis placeat iusto autem magni quisquam corrupti, accusantium saepe nihil quo ab eius, eum! Aliquam debitis reiciendis ut eveniet? Recusandae laboriosam minus in. Reiciendis odit veniam ut eos architecto unde dolor dignissimos, aut laudantium esse quia quas nobis doloribus sapiente sint rem, porro eligendi mollitia ex. Modi beatae iure, autem eaque tenetur explicabo eius consequatur!
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

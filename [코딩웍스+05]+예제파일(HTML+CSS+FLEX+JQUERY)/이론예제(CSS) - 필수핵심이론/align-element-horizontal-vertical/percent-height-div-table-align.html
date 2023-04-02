@@ -1,0 +1,97 @@
+<!doctype HTML>
+<html lang="ko">
+    <head>
+       <title>div 안에 table 요소 수직수평 정렬하기</title> 
+       
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /*헤더영역*/
+        #headerbox {
+            border: 5px solid black;
+            width: 100%;
+            height: 70%;
+            display: table;
+        }
+        #headerbox div {
+            border: 5px solid green;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #headerbox table {
+            border: 5px solid red;
+            width: 800px;
+            margin: auto;
+        }
+        /*바디영역*/
+        #bodybox {
+            border: 5px solid black;
+            width: 100%;
+            height: 15%;
+            display: table;
+        }
+        #bodybox div {
+            border: 5px solid green;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #bodybox table {
+            border: 5px solid red;
+            width: 800px;
+            margin: auto;
+        }
+        /*푸터영역*/
+        #footerbox {
+            border: 5px solid black;
+            width: 100%;
+            height: 15%;
+            display: table;
+        }
+        #footerbox div {
+            border: 5px solid green;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #footerbox table {
+            border: 5px solid red;
+            width: 800px;
+            margin: auto;
+        }
+    </style>
+    
+    </head>
+    <body>
+        
+        <div id="headerbox">
+            <div>
+                <table>
+                    <tr>
+                        <td>headerbox</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="bodybox">
+            <div>
+                <table>
+                    <tr>
+                        <td>bodybox</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footerbox">
+            <div>
+                <table>
+                    <tr>
+                        <td>footerbox</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+</html>    

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 focusin blur</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 600px; height: 400px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: none; color: white;}
+		button {cursor: pointer; width: 100px; margin-bottom: 10px}
+		p {font-weight: bold; font-size: 50px;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+	$('input').focusin(function(){
+		$(this).css({
+			'background':'lightgray'
+		});
+	});
+	$('input').blur(function(){
+		$(this).css({
+			'background':''
+		});
+	});  
+    </pre>
+    </fieldset>   	
+    
+    
+    
+	아이디 : <input type="text">
+	비밀번호 : <input type="password">
+   
+    <script>
+        $('input').focusin(function(){
+            $(this).css({
+                'background':'lightgray'
+            });
+        });
+        $('input').blur(function(){
+            $(this).css({
+                'background':''
+            });
+        }); 
+	</script>
+    
+</body>
+</html>

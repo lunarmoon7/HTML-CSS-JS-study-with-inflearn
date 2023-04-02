@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>flex - align-self</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .info {
+      padding: 30px;
+    }
+    .parent {
+      border: 5px solid green;
+      display: flex;
+    }
+    .parent div {
+      width: 100px;
+      height: 50px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      background-color: crimson;
+    }
+    .child1 {
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="info">
+    <h2>Flexbox 자식요소 사용하는 마진 속성</h2>
+    <ul>
+      <li>margin 속성을 auto로 설정해서 타 요소를 반대방향으로 밀어내 왼쪽 끝 또는 오른쪽 끝에 배치</li>
+    </ul>
+  </div>
+  
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+  </div>
+  
+</body>
+</html>

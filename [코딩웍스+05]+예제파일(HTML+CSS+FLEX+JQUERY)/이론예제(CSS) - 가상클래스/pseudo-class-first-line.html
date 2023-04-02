@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : first-line</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        
+        p::first-line {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   
+   <h1 class="headline">:first-line</h1>
+   <div>
+       <p>
+            여러분께 간곡히 말씀드리고 싶습니다.<br> 마음으로부터 피 맺힌 심정으로 말씀한겁니다.<br> "행동하는 양심이 됩시다. 행동하지 않는 양심은, "행동하지 않는 양심은 악의 편입니다, 여러분."
+       </p>
+   </div>
+    
+</body>
+</html>

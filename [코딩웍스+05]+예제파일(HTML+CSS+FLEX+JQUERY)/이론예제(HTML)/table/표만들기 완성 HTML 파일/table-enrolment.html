@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Table Style</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans', sans-serif;
+			font-size: 13px;
+			line-height: 1.6em;
+        }
+        table.enrolment {
+            width: 660px;
+            border-collapse: collapse;
+            border-bottom: 1px solid #999;
+        }
+        table.enrolment th {
+            text-align: center;
+            border-top: 3px solid #000;
+			background-color: dodgerblue;
+            padding: 7px;
+            color: #fff;
+        }
+        table.enrolment th:last-child {
+            border-right-style: none;
+        }
+        table.enrolment td {
+            text-align: center;
+            border: 1px solid #eee;
+            height: 28px;
+            color: #666;
+            padding: 8px;
+        }
+		table caption {
+			font-size: 26px;
+			margin-bottom: 20px;
+			background-color: crimson;
+			padding: 10px;
+			color: #fff;
+			border-radius: 5px;
+		}
+        ul.remark {
+            padding-left: 15px;
+			text-align: left;
+			list-style: circle;
+        }
+    </style>
+    
+</head>
+
+<body>
+   
+   <table class="enrolment">
+       <caption>Enrolment</caption>
+       <tr>
+           <th style="width: 20px;"></th>
+           <th style="width: 140px;">Configuration</th>
+           <th style="width: 140px;">Class time</th>
+           <th style="width: 360px;">Remarks</th>
+       </tr>
+        <tr>
+            <td rowspan="2">A</td>
+            <td rowspan="2">Listening & Speaking,
+                <br>Reading & Writing</td>
+            <td>Friday Special 7:15~8:00</td>
+            <td rowspan="2">
+                <ul class="remark">
+					<li>Mon to Fri class</li>
+					<li>Required for both 1st and 2nd classes</li>
+					<li>Friday Special Class Progress: Every Friday, lessons are divided into smaller classes, and classes are taught in a variety of different classes.</li>
+                </ul>
+            </td>
+        </tr>
+       <tr>
+           <td style="text-align: center;">2nd class 8:05~8:50</td>
+       </tr>
+       <tr>
+           <td>B</td>
+           <td>MML <br>(Multi-media Lab)</td>
+           <td>180 minutes in total</td>
+           <td>
+               <ul class="remark">
+				   <li>You can watch as many times as you like during your river time</li>
+				   <li>180 min required</li>
+               </ul>
+           </td>
+       </tr>
+       <tr>
+           <td>C</td>
+           <td>Special Activity</td>
+           <td>More dates will be announced later</td>
+           <td>
+           	   <ul class="remark">
+           	   	   <li>Provide a variety of games and experiences in English with your teacher</li>
+           	   </ul>
+           </td>
+       </tr>
+   </table>
+   
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo class : nth-child</title>
+    <style>
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 50px 20px; }
+        h1.headline {
+            font-size: 16px;
+            background-color: #111;
+            color: white;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        /* default CSS */
+        .first p:nth-child(1) {
+            background-color: yellow;
+        }
+        .first p:nth-child(2) {
+            background-color: green;
+        }
+        .first p:nth-child(4) {
+            background-color: red;
+        }
+        .first p:nth-child(5) {
+            background-color: violet;
+        }
+        .first p:nth-child(6) {
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+  
+   <h1 class="headline">:nth-child</h1>
+   
+    <div class="first">
+        <p>코딩 쫌 하는구나?</p>
+        <p>코딩 쫌 하는구나?</p>
+        <em>em 태그 - 코딩 쫌 하는구나?</em>
+        <p>코딩 쫌 하는구나?</p>
+        <p>코딩 쫌 하는구나?</p>
+        <p>코딩 쫌 하는구나?</p>
+    </div>
+    
+</body>
+</html>

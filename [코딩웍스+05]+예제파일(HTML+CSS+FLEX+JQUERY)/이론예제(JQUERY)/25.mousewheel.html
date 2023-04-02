@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 mousewheel.js</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <script src="js-css/jquery.mousewheel.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 600px; height: 400px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: none; color: white;}
+		button {cursor: pointer; width: 100px; margin-bottom: 10px}
+		p {font-weight: bold; font-size: 50px;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+
+		$('div').mousewheel(function(event,delta){
+			if(delta < 0) {
+				$(this).css({'background-color':'red'});
+				$('p').text('마우스휠을 내렸습니다.');
+			}
+			else if(delta > 0) {
+				$(this).css({'background-color':'blue'});
+				$('p').text('마우스휠을 올렸습니다.');
+			}
+		});
+
+    </pre>
+    </fieldset>   	
+    
+    
+	<div>
+		<p></p>
+	</div>
+   
+    <script>
+		$('div').mousewheel(function(event,delta){
+			if(delta < 0) {
+				$(this).css({'background-color':'red'});
+				$('p').text('마우스휠을 내렸습니다.');
+			}
+			else if(delta > 0) {
+				$(this).css({'background-color':'blue'});
+				$('p').text('마우스휠을 올렸습니다.');
+			}
+		});
+	</script>
+    
+</body>
+</html>

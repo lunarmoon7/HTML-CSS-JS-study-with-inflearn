@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>레이아웃 7 - 유동 너비 박스</title>
+  <style>
+    /* Google Web Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      height: 100vh;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    
+    header {
+      display: flex;
+      background-color: skyblue;
+    }
+    header div {
+      background-color: dodgerblue;
+      color: #fff;
+      width: 200px;
+      padding: 1em;
+      margin: 10px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    header div:last-child {
+      background-color: crimson;
+      margin-left: auto;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="header">
+    <div>가나다라마바</div>
+    <div>자차카타파하</div>
+    <div>마바사아자</div>
+    <div>가나다라마바사아자차카타파하</div>
+    <div>button</div>
+  </header>
+  
+</body>
+</html>

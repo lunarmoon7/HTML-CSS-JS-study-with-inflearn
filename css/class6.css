@@ -1,0 +1,183 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+.item {
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.459);
+}
+
+.item img {}
+
+.item .detail {
+    background-color: #fff;
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    transition: 0.35s;
+}
+
+.item:hover .detail {
+    bottom: 0;
+}
+
+.item img {
+    transition: 0.3s;
+}
+.item:hover img {
+    filter: blur(1px);
+}
+
+.item .detail .title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.item .detail h2 {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.2em;
+    float: left;
+}
+
+.item .detail .title h2 em {
+    font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.item .detail .title span {
+    /* position: absolute; */
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    color: crimson;
+}
+
+/* Size */
+.info {
+    position: relative;
+}
+.info .size {
+    margin-bottom: 10px;
+}
+.info .size label,
+.info .color label{
+    display: block;
+    margin-bottom: 5px;
+}
+.size span,
+.color span {
+    transition: 0.3s;
+}
+.info .size span {
+    font-size: 12px;
+    background-color: lightgray;
+    color: white;
+    margin: 5px 5px 5px 0;
+    width: 15px;    
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.info .size span.active,
+.info .size span:hover {
+    color: #fff;
+    background-color: #000;
+}
+.info .color {}
+.info .color span {
+    border: 1px solid #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 6px;
+    padding: 2px;
+    cursor: pointer;
+}
+.color span.active {
+    border-radius: 50%;
+}
+.info .color span:nth-of-type(1){
+    background-color: #808000;
+    
+}
+.info .color span:nth-of-type(2){
+    background-color: #ff0000;
+
+}
+.info .color span:nth-of-type(3){
+    background-color: #ffc0cb;
+
+}
+.info .color span:nth-of-type(4){
+    background-color: #00ffff;
+
+}
+.info .color span:nth-of-type(5){
+    background-color: #0000ff;
+
+}
+
+.add-cart {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 7px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-cart:hover {
+    background-color: #000;
+    color: #fff;
+}
+.like {
+    cursor: pointer;
+}
+/* Like */
+.like:before {
+    content: '\f08a';
+    font-family: fontawesome;
+    color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    transition: 0.3s;
+}
+.like.active:before {
+    content: '\f004';
+    color: crimson;
+}

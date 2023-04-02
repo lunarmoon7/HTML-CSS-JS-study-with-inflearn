@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CSS 가상클래스 : before & after</title>
+    <style type="text/css">
+        /* default CSS */
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        body { font: 13px/18px 'Nanum Gothic'; }        
+        div { margin: 20px; }
+        /* default CSS */
+        
+        h4 {
+            position: relative;
+        }
+        h4:before {
+            content: url(images/tag_new.gif);
+            vertical-align: middle;
+        }
+        h4:after {
+            content: " 디바제시카";
+            color: orangered;
+            font-weight: bold;
+        }
+
+        p:before {
+            content: open-quote;
+            font-weight: bold;
+            color: red;
+        }
+        p:after {
+            content: close-quote;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <h4> 서울 한복판 이제는 철거된 조선총독부 건물, 알고 계십니까?</h4>
+
+    <p>
+        생방에서도 말했지만, 조선총독부 건물같은경우는 우리나라에 아픈역사이기도하고 또, 철거비용 조차도 아깝고 철거하는것이 역사왜곡이나 잘못을 덮어주는것으로밖에안보일수도있지만 , 다른건물들이나 비석들은 역사공부나 그런곳에도 쓰이니, 철거하면안될것 같기도하고 또 어떡게보면 우리나라의 아픈역사를 너무 기념하는거 같아보인다는분들도계시구요.. 그래도 조선총독부는 철거한게 맞았던거 같습니다.
+    </p>
+
+</body>
+</html>

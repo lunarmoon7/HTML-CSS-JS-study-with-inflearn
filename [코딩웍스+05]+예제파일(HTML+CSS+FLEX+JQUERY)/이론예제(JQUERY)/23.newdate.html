@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 new Date()</title>
+    <script src="js-css/jquery-3.3.1.min.js"></script>
+    <!--내부스타일-->
+    <style>
+		div {width: 240px; height: 150px; background-color: dodgerblue; line-height: 150px; text-align: center; text-transform: none; color: white;}
+		button {cursor: pointer; width: 100px; margin-bottom: 10px}
+		p span {color: red;}
+	</style>
+	<!--내부스타일-->
+</head>
+<body>
+    
+    <fieldset>
+    	<legend>result</legend>
+    	<pre>
+		var now = new Date(); 
+		$('p').eq(0).children().text(now); //전체 날짜 시간 정보
+
+		var year = now.getFullYear();
+		$('p').eq(1).children().text(year); // 년도
+
+		var month = now.getMonth()+1;
+		$('p').eq(2).children().text(month); //월
+
+		var date = now.getDate();
+		$('p').eq(3).children().text(date); //일
+
+		var day = now.getDay();
+		$('p').eq(4).children().text(day); //요일
+
+		var hour = now.getHours();
+		$('p').eq(5).children().text(hour); //시간
+
+		var min = now.getMinutes();
+		$('p').eq(6).children().text(min); //분
+
+		var sec = now.getSeconds();
+		$('p').eq(7).children().text(sec); //초
+    </pre>
+    </fieldset>   	
+    
+    
+    <p>전체 날짜 정보 : <span></span></p>
+    <p>년도 : <span></span></p>
+    <p>월 : <span></span></p>
+    <p>일 : <span></span></p>
+    <p>요일 : <span></span></p>
+    <p>시간 : <span></span></p>
+    <p>분 : <span></span></p>
+    <p>초 : <span></span></p>
+    
+    
+    <script>
+		var now = new Date(); 
+		$('p').eq(0).children().text(now); //전체 날짜 시간 정보
+
+		var year = now.getFullYear();
+		$('p').eq(1).children().text(year); // 년도
+
+		var month = now.getMonth()+1;
+		$('p').eq(2).children().text(month); //월
+
+		var date = now.getDate();
+		$('p').eq(3).children().text(date); //일
+
+		var day = now.getDay();
+		$('p').eq(4).children().text(day); //요일
+
+		var hour = now.getHours();
+		$('p').eq(5).children().text(hour); //시간
+
+		var min = now.getMinutes();
+		$('p').eq(6).children().text(min); //분
+
+		var sec = now.getSeconds();
+		$('p').eq(7).children().text(sec); //초
+	</script>
+    
+</body>
+</html>
